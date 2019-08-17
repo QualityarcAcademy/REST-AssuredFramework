@@ -1,0 +1,24 @@
+[
+	{
+		"TestID": "TST001_ModifyIncident",
+		"Body": {
+			"caller_id": "Abel Tuter",
+			"description": "Test 1",
+			"urgency": 1,
+			"impact": 1
+		},
+		"StatusCode": 200,
+		"Status line": "OK"
+	},
+	{
+		"TestID": "TST002_ModifyIncident",
+		"Body": {
+			"caller_id": "Abel Tuter",
+			"description": "Test2",
+			"urgency": 2,
+			"impact": 2
+		},
+		"StatusCode": 200,
+		"Status line": "OK"
+	}
+]

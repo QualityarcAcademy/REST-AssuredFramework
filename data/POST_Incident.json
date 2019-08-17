@@ -1,0 +1,77 @@
+[
+	{
+		"TestID": "TST001_CreateIncident with High Urgency",
+		"Body": {
+			"caller_id": "Abel Tuter",
+			"short_description": "Test with high urgency",
+			"description": "First incident number",
+			"urgency": 1,
+			"impact": 1
+		},
+		"QueryParam": ["number"],
+		"StatusCode":201,
+		"Status line": "Created",
+		"Urgency": "1",
+		"Impact": "1"
+	},
+	{
+		"TestID": "TST002_CreateIncident with High Urgency",
+		"Body": {
+			"caller_id": "Abel Tuter",
+			"short_description": "Test with high urgency",
+			"description": "First incident number",
+			"urgency": 1,
+			"impact": 1
+		},
+		"QueryParam": ["number"],
+		"StatusCode":201,
+		"Status line": "Created",
+		"Urgency": "1",
+		"Impact": "1"
+	},
+	{
+		"TestID": "TST003_CreateIncident with High Urgency",
+		"Body": {
+			"caller_id": "Abel Tuter",
+			"short_description": "Test with high urgency",
+			"description": "First incident number",
+			"urgency": 1,
+			"impact": 1
+		},
+		"QueryParam": ["number"],
+		"StatusCode":201,
+		"Status line": "Created",
+		"Urgency": "1",
+		"Impact": "1"
+	},
+	{
+		"TestID": "TST004_CreateIncident with High Urgency",
+		"Body": {
+			"caller_id": "Abel Tuter",
+			"short_description": "Test with high urgency",
+			"description": "First incident number",
+			"urgency": 1,
+			"impact": 1
+		},
+		"QueryParam": ["number"],
+		"StatusCode":201,
+		"Status line": "Created",
+		"Urgency": "1",
+		"Impact": "1"
+	},
+	{
+		"TestID": "TST005_CreateIncident with High Urgency",
+		"Body": {
+			"caller_id": "Abel Tuter",
+			"short_description": "Test with high urgency",
+			"description": "First incident number",
+			"urgency": 1,
+			"impact": 1
+		},
+		"QueryParam": ["number"],
+		"StatusCode":201,
+		"Status line": "Created",
+		"Urgency": "1",
+		"Impact": "1"
+	}
+]

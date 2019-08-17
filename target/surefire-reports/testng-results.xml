@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="7561" started-at="2019-08-17T08:12:02Z" finished-at="2019-08-17T08:12:09Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="7561" started-at="2019-08-17T08:12:02Z" finished-at="2019-08-17T08:12:09Z">
+      <class name="sandbox.HelloWorld">
+        <test-method status="PASS" signature="helloWorld()[pri:0, instance:sandbox.HelloWorld@142eef62]" name="helloWorld" duration-ms="85" started-at="2019-08-17T08:12:02Z" finished-at="2019-08-17T08:12:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- helloWorld -->
+      </class> <!-- sandbox.HelloWorld -->
+      <class name="tests.snow.api.CreateIncident">
+        <test-method status="PASS" signature="jsondata()[pri:0, instance:tests.snow.api.CreateIncident@4a9cc6cb]" name="jsondata" is-config="true" duration-ms="4" started-at="2019-08-17T08:12:02Z" finished-at="2019-08-17T08:12:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsondata -->
+        <test-method status="PASS" signature="createAnIncident(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:tests.snow.api.CreateIncident@4a9cc6cb]" name="createAnIncident" duration-ms="7105" started-at="2019-08-17T08:12:02Z" data-provider="JSONData" finished-at="2019-08-17T08:12:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TST001_CreateIncident with High Urgency"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"caller_id":"Abel Tuter","short_description":"Test with high urgency","description":"First incident number","urgency":1,"impact":1}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[["number"]]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[201]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA["OK"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAnIncident -->
+      </class> <!-- tests.snow.api.CreateIncident -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
