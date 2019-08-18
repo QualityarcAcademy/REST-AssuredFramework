@@ -5,6 +5,8 @@ import org.testng.annotations.Test;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import cucumber.api.java.en.Given;
+
 import static io.restassured.RestAssured.*;
 import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
@@ -35,6 +37,8 @@ public class CreateIncident extends SNowRestAPI {
 
 	}
 	
+	
+	
 	@Step
 	@Test(dataProvider="JSONData")
 	public void createAnIncident(String testID, Object body, ArrayList<String> QueryParam, Integer statusCode, String statusline) {		
@@ -49,6 +53,23 @@ public class CreateIncident extends SNowRestAPI {
 		then().
 				spec(setResponseSpec(statusCode)).
 				statusLine(containsString(statusline)).
+				log().all();
+	}
+	
+	//Running from cucumber
+	@Given("Create an Incident using API and verify (.*)")
+	public void createAnIncidentUsingCucumber(Integer statuscode) {		
+		
+		//Test 
+		given().
+				spec(setRequestSpec()).
+				//queryParam("sysparm_fields", QueryParam).
+				body("").
+		when().
+				post("/incident").
+		then().
+				spec(setResponseSpec(statuscode)).
+				statusLine(containsString("Created")).
 				log().all();
 	}
 
