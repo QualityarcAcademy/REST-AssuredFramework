@@ -2,26 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="7561" started-at="2019-08-17T08:12:02Z" finished-at="2019-08-17T08:12:09Z">
+  <suite name="Suite" duration-ms="10571" started-at="2019-08-24T07:24:55Z" finished-at="2019-08-24T07:25:05Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="7561" started-at="2019-08-17T08:12:02Z" finished-at="2019-08-17T08:12:09Z">
-      <class name="sandbox.HelloWorld">
-        <test-method status="PASS" signature="helloWorld()[pri:0, instance:sandbox.HelloWorld@142eef62]" name="helloWorld" duration-ms="85" started-at="2019-08-17T08:12:02Z" finished-at="2019-08-17T08:12:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- helloWorld -->
-      </class> <!-- sandbox.HelloWorld -->
+    <test name="Test" duration-ms="10571" started-at="2019-08-24T07:24:55Z" finished-at="2019-08-24T07:25:05Z">
       <class name="tests.snow.api.CreateIncident">
-        <test-method status="PASS" signature="jsondata()[pri:0, instance:tests.snow.api.CreateIncident@4a9cc6cb]" name="jsondata" is-config="true" duration-ms="4" started-at="2019-08-17T08:12:02Z" finished-at="2019-08-17T08:12:02Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.snow.api.CreateIncident@24f360b2]" name="setup" is-config="true" duration-ms="40" started-at="2019-08-24T07:24:55Z" finished-at="2019-08-24T07:24:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- jsondata -->
-        <test-method status="PASS" signature="createAnIncident(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:tests.snow.api.CreateIncident@4a9cc6cb]" name="createAnIncident" duration-ms="7105" started-at="2019-08-17T08:12:02Z" data-provider="JSONData" finished-at="2019-08-17T08:12:09Z">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="createAnIncident(java.lang.String, java.lang.Object, java.util.ArrayList, java.lang.Integer, java.lang.String)[pri:0, instance:tests.snow.api.CreateIncident@24f360b2]" name="createAnIncident" duration-ms="6735" started-at="2019-08-24T07:24:55Z" data-provider="JSONData" finished-at="2019-08-24T07:25:02Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA["TST001_CreateIncident with High Urgency"]]>
+                <![CDATA[TST001_CreateIncident with High Urgency]]>
               </value>
             </param>
             <param index="1">
@@ -31,7 +25,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[["number"]]]>
+                <![CDATA[[number]]]>
               </value>
             </param>
             <param index="3">
@@ -41,7 +35,38 @@
             </param>
             <param index="4">
               <value>
-                <![CDATA["OK"]]>
+                <![CDATA[Created]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAnIncident -->
+        <test-method status="PASS" signature="createAnIncident(java.lang.String, java.lang.Object, java.util.ArrayList, java.lang.Integer, java.lang.String)[pri:0, instance:tests.snow.api.CreateIncident@24f360b2]" name="createAnIncident" duration-ms="3514" started-at="2019-08-24T07:25:02Z" data-provider="JSONData" finished-at="2019-08-24T07:25:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TST002_CreateIncident with High Urgency]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"caller_id":"Abel Tuter","short_description":"Test with high urgency","description":"First incident number","urgency":1,"impact":1}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[number]]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[201]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Created]]>
               </value>
             </param>
           </params>
